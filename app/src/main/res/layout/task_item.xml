@@ -1,0 +1,50 @@
+<!-- task_item.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/task_box_background"
+    android:layout_marginBottom="12dp" >
+
+    <TextView
+        android:id="@+id/taskTitleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Title"
+        android:textSize="18sp"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/taskDescriptionView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Description"
+        android:textSize="16sp"
+        android:textColor="#000" />
+
+    <LinearLayout
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="700px"
+        android:layout_marginTop="-90px"
+        android:layout_marginBottom="50px"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/editButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30px"
+            android:background="@null"
+            android:src="@drawable/baseline_mode_edit_24" />
+
+        <ImageButton
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/baseline_delete_24" />
+    </LinearLayout>
+
+</LinearLayout>

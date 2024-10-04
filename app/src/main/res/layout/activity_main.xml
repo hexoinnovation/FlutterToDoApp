@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#9B51E0">
+
+    <!-- Task Title Input -->
+    <EditText
+        android:id="@+id/taskTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Title"
+        android:textColorHint="@color/black"
+        android:padding="10dp"
+        android:background="@drawable/rounded_box"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Task Description Input -->
+    <EditText
+        android:id="@+id/taskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_box"
+        android:hint="Task Description"
+        android:textColorHint="@color/black"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <!-- Horizontal Layout for Search and Add Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="@drawable/rounded_box"
+            android:queryHint="Search"
+            android:iconifiedByDefault="false"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/addTaskButton"
+            android:layout_width="61dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/button_background"
+            android:backgroundTint="#3b5998"
+            android:drawableEnd="@android:drawable/ic_input_add"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="+"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- RecyclerView for displaying tasks -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="5dp" />
+</LinearLayout>
